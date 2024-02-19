@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins";
+}
+header {
+    text-align: center;
+}
+header h1{
+    font-weight: 200;
+    word-spacing: .1em;
+    letter-spacing: 1px;
+    font-size: 2.1em;
+}
+#runner-name{
+    font-weight: bold;
+    font-size: 2.1em;
+    color:  hsl(234, 12%, 34%);
+    letter-spacing: 2px;
+    word-spacing: -.1em;
+    margin: 0em 0em .5em;
+}
+.discription{
+    font-size: 1em;
+    padding: 0em 25em;
+    word-spacing: -.1em;
+    margin: 0em 0em 4em;
+    font-weight: 200;
+}
+main{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 108px 108px 108px 108px;
+    justify-items: center;
+    gap: 2em;
+}
+.supervisor{
+    grid-area: 2 / 1 / 4 / 2 ;
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.team-builder{
+    grid-area: 1 / 2 / 3 / 3 ;
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.karma{
+    grid-area: 3 / 2 / 5 / 3;
+    border-top: 3px solid hsl(34, 97%, 64%);
+
+}
+.calculator{
+    grid-area: 2 / 3 / 4 / 4 ;
+    border-top: 3px solid hsl(212, 86%, 64%);
+
+}
+
+main div{
+    border-radius: .5em;
+    padding: 1.7em 1.8em;
+    position: relative;
+    box-shadow: 0px 5px 1em hsl(229, 6%, 66%);
+}
+main div img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0em 2.15em 2em 0em;
+}
+.headers{
+    font-size: 1.3em;
+    margin: 0em 0em .3em;
+}
+.info{
+    font-size: .8em;
+    word-spacing: .1em;
+    line-height: 1.8em;
+    font-weight: 200;
+}
+@media screen and (max-width:800px) {
+    .wrapper{
+        height: 200vh;
+    }
+    header h1{
+        font-size: 1em;
+    }
+    #runner-name{
+        font-size: 1em;
+    }
+    .discription{
+        padding : 0em 13em;
+        font-size: .8em;
+    }
+    main{
+        grid-template-columns: 250px;
+        grid-template-rows: 220px 220px 220px 220px;
+        justify-items: center;
+    }
+    .supervisor{
+        grid-area: auto ;
+    }
+    .team-builder{
+        grid-area:auto ;
+    }
+    .karma{
+        grid-area:auto;    
+    }
+    .calculator{
+        grid-area: auto ;    
+    }
+}
