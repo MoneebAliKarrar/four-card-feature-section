@@ -30,7 +30,7 @@ header h1{
 }
 .discription{
     font-size: 1em;
-    padding: 0em 25em;
+    max-width: 550px;
     word-spacing: -.1em;
     margin: 0em 0em 4em;
     font-weight: 200;
@@ -94,7 +94,7 @@ main div img{
         font-size: 1em;
     }
     .discription{
-        padding : 0em 13em;
+        max-width: 250px;
         font-size: .8em;
     }
     main{
